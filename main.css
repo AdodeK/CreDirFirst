@@ -6,7 +6,7 @@
 
 :root {
   --fontsizeh2: 1.4rem;
-  --fontsizep: 1.1rem;
+  --fontsizep: 1rem;
   --fontsizelinks: 0.9rem;
   --linkslextcolor: rgb(119, 149, 208);
   --linkcolors: rgb(55, 93, 168);
@@ -156,6 +156,9 @@ footer {
   color: #172049;
   font-family: var(--fontFamLucida);
 }
+footer p {
+  font-size: 0.9rem;
+}
 
 footer p a {
   text-decoration: none;
@@ -185,11 +188,12 @@ footer .bttop .fa-right-long {
 
 @media screen and (max-width: 1024px) {
   .update h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
 
   p.unique {
+    font-size: 0.9rem;
     padding: 0 23%;
   }
 
@@ -200,14 +204,14 @@ footer .bttop .fa-right-long {
 
 @media screen and (max-width: 858px) {
   .update h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     font-weight: bolder;
     margin-bottom: 1.2vh;
   }
-  .update ul li {
+  .container.update ul li {
     font-size: 0.8rem;
-    margin-bottom: 0.8vh;
+    margin-bottom: 0.2vh;
   }
   .update ul li span {
     margin-right: 1rem;
@@ -257,7 +261,7 @@ footer .bttop .fa-right-long {
   }
 
   footer p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   footer p a {
     text-decoration: none;
@@ -301,6 +305,10 @@ footer .bttop .fa-right-long {
 
   header div .fa-bars {
     font-size: 1.3rem;
+  }
+  main.container .update ul li {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
   }
 }
 
