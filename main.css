@@ -1,0 +1,502 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fontsizeh1: 2.5rem;
+  --fontsizeh2: 1.4rem;
+  --fontsizeh3: ;
+  --fontsizeh4: ;
+  --fontsizep: 1.1rem;
+  --fontsizelinks: 0.9rem;
+  --linkslextcolor: rgb(119, 149, 208);
+  --linkcolors: rgb(55, 93, 168);
+  --alignselfTextColor: #1f5277;
+  --fontFamLucida: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: serif;
+  word-wrap: break-word;
+}
+header {
+  padding: 1vh 3vw;
+}
+
+header figure {
+  width: 8rem;
+}
+
+header figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+header div {
+  display: none;
+}
+
+div.center {
+  background-color: #182048;
+}
+
+main.container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+  padding: 2vh 4vw;
+}
+
+.update {
+  margin-top: 4vh;
+  padding-top: 4vh;
+  align-self: flex-start;
+  color: var(--alignselfTextColor);
+  font-family: var(--fontFamLucida);
+}
+.update h2 {
+  font-size: var(--fontsizeh2);
+  line-height: 2rem;
+  font-weight: bolder;
+  margin-bottom: 1vh;
+}
+.update ul {
+  font-size: var(--fontsizelinks);
+  font-weight: 700;
+  list-style-type: none;
+}
+.update ul li {
+  line-height: 1.5rem;
+}
+.update ul li span {
+  margin-right: 1vw;
+}
+.update ul li:nth-child(even) {
+  margin-left: 0.5vw;
+}
+.update ul li:last-child span .fa-circle-check {
+  color: #6ab343;
+}
+.update ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: #6ab343;
+  font-weight: 700;
+}
+.update a:hover {
+  color: #6ab343;
+  transform: scale(1.1);
+  transition-duration: 0.5ms;
+}
+
+main.container .middle {
+  display: grid;
+  place-content: center;
+  background-color: #182048;
+  color: rgb(232, 230, 230);
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 2vh;
+}
+
+main.container .middle h1 {
+  font-family: sans-serif;
+  font-size: var(--fontsizeh1);
+  letter-spacing: 0.2rem;
+}
+
+p.unique {
+  font-size: var(--fontsizep);
+  color: #2a345e;
+  text-align: center;
+  font-family: var(--fontFamLucida);
+}
+.plinks {
+  margin-bottom: 1.5vh;
+}
+.container .plinks a {
+  text-decoration: none;
+  color: var(--linkslextcolor);
+  font-size: var(--fontsizelinks);
+  font-family: var(--fontFamLucida);
+  border-bottom: 1.5px solid var(--linkcolors);
+}
+.container .plinks a:hover {
+  filter: brightness(120%);
+}
+
+.social .fa-twitter {
+  font-size: 1.2rem;
+  color: #454d6d;
+  margin-right: 0.5vw;
+}
+.social .fa-twitter:hover,
+.social .fa-linkedin-in:hover {
+  display: inline-block;
+  transform: scaleX(1.1);
+  transition-duration: 0.5ms;
+}
+.social .fa-linkedin-in {
+  font-size: 1.2rem;
+  color: #454d6d;
+  margin-left: 0.5vw;
+}
+
+footer {
+  margin-top: 20vh;
+  padding: 6vh 0;
+  padding-bottom: 1vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+  color: #172049;
+  font-family: var(--fontFamLucida);
+}
+
+footer p a {
+  text-decoration: none;
+  color: var(--linkslextcolor);
+  font-size: var(--fontsizelinks);
+  font-family: var(--fontFamLucida);
+  border-bottom: 1.5px solid var(--linkcolors);
+}
+
+footer p a:hover {
+  filter: brightness(120%);
+}
+
+footer .bttop {
+  align-self: flex-end;
+  margin-right: 3vw;
+  display: block;
+}
+footer .bttop .fa-right-long {
+  transform: rotate(-90deg);
+  color: white;
+  padding: 1rem;
+  border: 1px solid var(--alignselfTextColor);
+  background-color: var(--alignselfTextColor);
+}
+
+@media screen and (max-width: 1024px) {
+  .update h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  main.container .middle h1 {
+    font-size: 2rem;
+  }
+  main.container .middle {
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 2vh;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .update {
+    margin-top: 4vh;
+    padding-top: 6vh;
+  }
+  .update h2 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1vh;
+  }
+  .update ul li {
+    font-size: 0.8rem;
+    margin-bottom: 0.8vh;
+  }
+  .update ul li span {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .update ul li:nth-child(even) {
+    margin-left: 0.3rem;
+  }
+
+  main.container .middle {
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 3vh;
+  }
+
+  main.container .middle h1 {
+    font-family: sans-serif;
+    font-size: 1.8rem;
+  }
+
+  p.unique {
+    font-size: 0.9rem;
+    color: #2a345e;
+    text-align: center;
+  }
+  .plinks {
+    margin-bottom: 1.5vh;
+  }
+  .container .plinks a {
+    text-decoration: none;
+    color: var(--linkslextcolor);
+    font-size: 0.8rem;
+    font-family: var(--fontFamLucida);
+    border-bottom: 1.5px solid var(--linkcolors);
+  }
+  .container .plinks a:hover {
+    filter: brightness(120%);
+  }
+
+  .social .fa-twitter {
+    font-size: 1.1rem;
+    margin-right: 0.3rem;
+  }
+
+  .social .fa-linkedin-in {
+    font-size: 1.1rem;
+    margin-left: 0.3rem;
+  }
+
+  footer {
+    margin-top: 20vh;
+    padding: 6vh 0;
+    padding-bottom: 1vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    color: #172049;
+    font-family: var(--fontFamLucida);
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+  footer p a {
+    text-decoration: none;
+    color: var(--linkslextcolor);
+    font-size: 0.8rem;
+    font-family: var(--fontFamLucida);
+    border-bottom: 1.5px solid var(--linkcolors);
+  }
+
+  footer p a:hover {
+    filter: brightness(120%);
+  }
+
+  footer .bttop {
+    align-self: flex-end;
+    margin-right: 3vw;
+    display: block;
+  }
+  footer .bttop .fa-right-long {
+    transform: rotate(-90deg);
+    color: white;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    border: 1px solid var(--alignselfTextColor);
+    background-color: var(--alignselfTextColor);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  header {
+    padding: 3vh 1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header figure {
+    width: 7rem;
+  }
+
+  header figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  header div {
+    display: block;
+  }
+
+  header div .fa-bars {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  body {
+    padding: 0 1.5rem;
+  }
+
+  main.container {
+    padding: 0.7rem;
+    gap: 5vh;
+  }
+  header {
+    padding: 3vh 0;
+  }
+
+  header figure {
+    width: 7rem;
+  }
+
+  header div .fa-bars {
+    font-size: 1.3rem;
+  }
+  .update {
+    margin: 0;
+    margin: 4vh 0;
+    padding: 0;
+    padding-top: 6vh;
+  }
+  .update h2 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 2vh;
+  }
+  .update ul li {
+    font-size: 0.8rem;
+    margin-bottom: 0.5vh;
+  }
+  .update ul li span {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .update ul li:nth-child(even) {
+    margin-left: 0;
+  }
+  main.container .middle {
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 3vh;
+  }
+
+  main.container .middle h1 {
+    font-family: sans-serif;
+    font-size: 5.5rem;
+  }
+
+  p.unique {
+    font-size: 0.9rem;
+    color: #2a345e;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  .plinks {
+    margin-bottom: 1.5vh;
+  }
+  .container .plinks a {
+    text-decoration: none;
+    color: var(--linkslextcolor);
+    font-size: 0.85rem;
+    font-family: var(--fontFamLucida);
+    border-bottom: 1.5px solid var(--linkcolors);
+  }
+  .container .plinks a:hover {
+    filter: brightness(120%);
+  }
+
+  .social .fa-twitter {
+    font-size: 1.1rem;
+    margin-right: 0.4rem;
+  }
+
+  .social .fa-linkedin-in {
+    font-size: 1.1rem;
+    margin-left: 0.4rem;
+  }
+
+  footer {
+    margin-top: 15vh;
+    padding: 6vh 0;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    color: #172049;
+    font-family: var(--fontFamLucida);
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  footer p a {
+    text-decoration: none;
+    color: var(--linkslextcolor);
+    font-size: 0.85rem;
+    font-family: var(--fontFamLucida);
+    border-bottom: 1.5px solid var(--linkcolors);
+  }
+
+  footer p a:hover {
+    filter: brightness(120%);
+  }
+
+  footer .bttop {
+    align-self: flex-end;
+    margin-right: 3vw;
+    display: block;
+  }
+
+  footer .bttop .fa-right-long {
+    transform: rotate(-90deg);
+    color: white;
+    padding: 0.9rem;
+    font-size: 0.8rem;
+    border: 1px solid var(--alignselfTextColor);
+    border-radius: 50%;
+    background-color: var(--alignselfTextColor);
+  }
+}
+
+@media screen and (max-width: 376) {
+  main.container .middle {
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 3vh;
+  }
+
+  main.container .middle h1 {
+    font-family: sans-serif;
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  main.container .middle {
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 3vh;
+  }
+
+  main.container .middle h1 {
+    font-family: sans-serif;
+    font-size: 4.5rem;
+  }
+}
