@@ -447,16 +447,14 @@ footer .bttop .fa-right-long {
 }
 @media screen and (max-width: 376px) {
   main.container {
-    margin-top: 0;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
+    margin-top: 0 !important;
+    gap: 4vh !important;
     padding: 2vh 4vw;
   }
 
+  main.container .update p {
+    font-size: 1.2rem;
+  }
   .update {
     margin-top: 0;
     padding-top: 0;
@@ -470,14 +468,23 @@ footer .bttop .fa-right-long {
 
   main.container {
     padding: 0.7rem;
-    gap: 5vh;
+    /* gap: 5vh; */
   }
   header {
     padding: 3vh 0.7rem;
   }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 340px) {
+  main.container {
+    margin-top: 0 !important;
+    gap: 3vh !important;
+    padding: 2vh 4vw;
+  }
+  header {
+    padding: 2vh 0.7rem;
+    padding-bottom: 0;
+  }
   .update ul {
     margin-left: 4vw;
     font-size: var(--fontsizelinks);
@@ -495,7 +502,8 @@ footer .bttop .fa-right-long {
     margin: 0;
   }
   .update p {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
+    line-height: 1.4rem;
   }
   .update ul li span {
     margin-right: 5vw;
