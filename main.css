@@ -446,14 +446,14 @@ footer .bttop .fa-right-long {
   }
 }
 @media screen and (max-width: 376px) {
-  main.container {
-    margin-top: 0 !important;
-    gap: 4vh !important;
+  body main.container {
+    margin-top: 0;
+    gap: 4vh;
     padding: 2vh 4vw;
   }
 
   main.container .update p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
   .update {
     margin-top: 0;
@@ -476,9 +476,9 @@ footer .bttop .fa-right-long {
 }
 
 @media screen and (max-width: 340px) {
-  main.container {
-    margin-top: 0 !important;
-    gap: 3vh !important;
+  body main.container {
+    margin-top: 0;
+    gap: 3vh;
     padding: 2vh 4vw;
   }
   header {
@@ -501,8 +501,11 @@ footer .bttop .fa-right-long {
     width: 100%;
     margin: 0;
   }
-  .update p {
-    font-size: 1.2rem !important;
+  main.container .plinks {
+    font-size: 0.75rem;
+  }
+  body main.container .update p {
+    font-size: 1.2rem;
     line-height: 1.4rem;
   }
   .update ul li span {
@@ -510,5 +513,11 @@ footer .bttop .fa-right-long {
   }
   .update ul li span .fa-circle-check {
     font-size: 0.9rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+  footer p a {
+    font-size: 0.7rem;
   }
 }
