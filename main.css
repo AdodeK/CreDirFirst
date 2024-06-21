@@ -447,6 +447,23 @@ footer .bttop .fa-right-long {
 }
 
 @media screen and (max-width: 376px) {
+  main.container {
+    margin-top: 7vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 2vh 4vw;
+  }
+
+  .update {
+    margin-top: 0;
+  }
+  main.container .middle {
+    margin-bottom: 0;
+  }
   body {
     padding: 0 1rem;
   }
