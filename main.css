@@ -54,32 +54,42 @@ main.container {
   color: var(--alignselfTextColor);
   font-family: var(--fontFamLucida);
 }
-.update h2 {
+.update p {
   font-size: var(--fontsizeh2);
-  line-height: 2rem;
-  font-weight: bolder;
-  margin-bottom: 1.2vh;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2vh;
+  text-align: center;
 }
 .update ul {
   font-size: var(--fontsizelinks);
-  font-weight: 700;
+  font-weight: 400;
   list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 2rem;
+  row-gap: 0.5rem;
 }
 .update ul li {
-  line-height: 1.5rem;
+  line-height: 0;
 }
 .update ul li span {
   margin-right: 1vw;
 }
 
-.update ul li:last-child span .fa-circle-check {
+.update ul li:nth-child(3):hover {
   color: #6ab343;
 }
+
 .update ul a {
   display: inline-block;
   text-decoration: none;
-  color: #6ab343;
-  font-weight: 700;
+  color: var(--alignselfTextColor);
+  font-weight: 400;
+  border-bottom: 1.5px solid;
+  line-height: 1rem;
 }
 .update a:hover {
   color: #6ab343;
@@ -88,7 +98,7 @@ main.container {
 }
 
 main.container .middle {
-  width: 14rem;
+  width: 13rem;
 }
 
 main.container .middle img {
@@ -98,6 +108,7 @@ main.container .middle img {
 }
 
 p.unique {
+  display: none;
   padding: 0 25%;
   order: 4;
   -ms-flex-order: 4;
@@ -187,27 +198,31 @@ footer .bttop .fa-right-long {
 }
 
 @media screen and (max-width: 1024px) {
-  .update h2 {
-    font-size: 1.2rem;
-    line-height: 2rem;
+  .update p {
+    font-size: var(--fontsizeh2);
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    text-align: center;
   }
 
-  p.unique {
+  /* p.unique {
     font-size: 0.9rem;
     padding: 0 23%;
-  }
+  } */
 
   main.container .middle {
-    width: 13rem;
+    width: 11rem;
   }
 }
 
 @media screen and (max-width: 858px) {
-  .update h2 {
-    font-size: 1.1rem;
-    line-height: 2rem;
-    font-weight: bolder;
-    margin-bottom: 1.2vh;
+  .update p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    text-align: center;
   }
   .container.update ul li {
     font-size: 0.8rem;
@@ -218,12 +233,16 @@ footer .bttop .fa-right-long {
     font-size: 1rem;
   }
 
-  p.unique {
+  /* p.unique {
     padding: 0 13%;
     font-size: 0.9rem;
     color: #2a345e;
     text-align: center;
+  } */
+  main.container .middle {
+    width: 9rem;
   }
+
   .plinks {
     margin-bottom: 1.5vh;
   }
@@ -301,6 +320,15 @@ footer .bttop .fa-right-long {
 
   header div {
     display: block;
+    color: var(--alignselfTextColor);
+  }
+
+  .update p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    text-align: center;
   }
 
   header div .fa-bars {
@@ -333,16 +361,12 @@ footer .bttop .fa-right-long {
     padding: 0;
     padding-top: 2vh;
   }
-  .update h2 {
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-    font-weight: bolder;
-    margin-bottom: 1.8vh;
-  }
+
   .update ul li {
     font-size: 0.8rem;
     margin-bottom: 0.4vh;
   }
+
   .update ul li span {
     margin-right: 1rem;
     font-size: 1rem;
@@ -352,13 +376,6 @@ footer .bttop .fa-right-long {
     width: 100%;
   }
 
-  p.unique {
-    padding: 0;
-    font-size: 0.9rem;
-    color: #2a345e;
-    text-align: center;
-    line-height: 1.5rem;
-  }
   .plinks {
     margin-bottom: 1.5vh;
   }
@@ -440,5 +457,33 @@ footer .bttop .fa-right-long {
   }
   header {
     padding: 3vh 0.7rem;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .update ul {
+    margin-left: 4vw;
+    font-size: var(--fontsizelinks);
+    font-weight: 400;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    row-gap: 0;
+  }
+  .update ul li {
+    line-height: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .update p {
+    font-size: 1.2rem;
+  }
+  .update ul li span {
+    margin-right: 5vw;
+  }
+  .update ul li span .fa-circle-check {
+    font-size: 0.9rem;
   }
 }
