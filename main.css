@@ -347,10 +347,12 @@ footer .bttop .fa-right-long {
 
   main.container {
     padding: 0.7rem;
+    padding-top: 0;
     gap: 0.5vh;
   }
   header {
-    padding: 0.5vh 0.7rem;
+    padding: 0.5vh 0.9rem;
+    padding-top: 2vh;
   }
 
   header div .fa-bars {
@@ -468,12 +470,11 @@ footer .bttop .fa-right-long {
 
   main.container {
     padding: 0.7rem;
-    /* gap: 5vh; */
   }
 
   body header {
-    padding: 2vh 0.7rem;
-    padding-bottom: 1vh;
+    padding: 2vh 0.9rem;
+    padding-bottom: 0;
   }
 }
 
@@ -481,10 +482,10 @@ footer .bttop .fa-right-long {
   body main.container {
     margin-top: 0;
     gap: 3vh;
-    padding: 2vh 4vw;
+    padding: 2vh 2vw;
   }
   body header {
-    padding: 2vh 0.7rem;
+    padding: 2vh 2vw;
     padding-bottom: 0;
   }
   .update ul {
