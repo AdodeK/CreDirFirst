@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  word-wrap: break-word;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+section {
+  width: 99%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 10px;
+}
+
+section ol,
+section ul {
+  margin-left: 30px;
+}
+
+section ol li,
+section ol li {
+  font-size: 0.94rem;
+  line-height: 1.13rem;
+}
+
+section h4 {
+  font-size: 1.1rem;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
