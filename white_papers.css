@@ -32,11 +32,12 @@ body {
 }
 
 main header {
-  padding: 2.5rem 3rem;
+  padding: 2.4rem 3.2rem;
+  padding-bottom: 2rem;
 }
 
 main header figure {
-  width: 7%;
+  width: 7.5%;
   min-width: 4rem;
   max-width: 6rem;
 }
@@ -48,9 +49,9 @@ main header figure img {
 
 .whitepapers p.paper {
   color: #172049;
-  font-family: var(--fontFamLucida);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: var(--fontsizeh2);
-  color: rgb(65, 32, 19);
+  color: rgb(23, 32, 73);
 }
 
 section.whitepapers {
@@ -60,11 +61,11 @@ section.whitepapers {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  gap: 85px;
+  gap: 80px;
 }
 
 section.whitepapers div.companies {
-  width: 85%;
+  width: 94%;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
@@ -100,7 +101,7 @@ footer {
 
 .social .fa-twitter {
   font-size: 1.2rem;
-  color: #454d6d;
+  color: rgb(23, 32, 73);
   margin-right: 0.5vw;
 }
 .social .fa-twitter:hover,
@@ -115,7 +116,7 @@ footer {
   margin-left: 0.5vw;
 }
 footer p.copy {
-  margin-top: 20vh;
+  margin-top: 23vh;
 }
 
 footer p {
@@ -146,4 +147,203 @@ footer .bttop .fa-right-long {
   border: 1px solid var(--alignselfTextColor);
   background-color: var(--alignselfTextColor);
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  main header {
+    padding: 2rem 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  main header figure {
+    width: 9%;
+    min-width: 3.5rem;
+    max-width: 5rem;
+  }
+
+  .whitepapers p.paper {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9rem;
+    color: rgb(23, 32, 73);
+  }
+
+  section.whitepapers {
+    margin-top: 100px;
+    margin-bottom: 500px;
+    gap: 75px;
+  }
+
+  section.whitepapers div.companies {
+    width: 94%;
+    row-gap: 60px;
+    column-gap: 14%;
+  }
+
+  section.whitepapers div.companies p {
+    min-width: 80px;
+    width: 10%;
+    max-width: 150px;
+  }
+
+  footer {
+    margin-top: 4vh;
+    padding-bottom: 1vh;
+    gap: 5vh;
+  }
+
+  .social .fa-twitter {
+    font-size: 1.2rem;
+    color: rgb(23, 32, 73);
+    margin-right: 0.7vw;
+  }
+  .social .fa-twitter:hover,
+  .social .fa-linkedin-in:hover {
+    display: inline-block;
+    transform: scaleX(1.1);
+    transition-duration: 0.5ms;
+  }
+  .social .fa-linkedin-in {
+    font-size: 1.2rem;
+    color: #454d6d;
+    margin-left: 0.7vw;
+  }
+  footer p.copy {
+    margin-top: 23vh;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+
+  footer p a {
+    font-size: 0.8rem;
+  }
+
+  footer .bttop .fa-right-long {
+    transform: rotate(-90deg);
+    color: white;
+    padding: 1rem;
+    border: 1px solid var(--alignselfTextColor);
+    background-color: var(--alignselfTextColor);
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 642px) {
+  section.whitepapers {
+    margin-top: 80px;
+    margin-bottom: 800px;
+    gap: 100px;
+  }
+
+  section.whitepapers div.companies {
+    width: 94%;
+    row-gap: 60px;
+    column-gap: 45%;
+    padding: 0 10%;
+  }
+
+  .whitepapers p.paper {
+    color: #172049;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    color: rgb(23, 32, 73);
+  }
+
+  section.whitepapers div.companies p {
+    min-width: 80px;
+    width: 12%;
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section.whitepapers {
+    margin-top: 80px;
+    margin-bottom: 1000px;
+    gap: 100px;
+  }
+
+  section.whitepapers div.companies {
+    width: 90%;
+    row-gap: 60px;
+    column-gap: 30%;
+    padding: 0 10%;
+    justify-content: space-evenly;
+  }
+
+  .whitepapers p.paper {
+    color: #172049;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    color: rgb(23, 32, 73);
+  }
+
+  section.whitepapers div.companies p {
+    min-width: 80px;
+    width: 12%;
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  section.whitepapers {
+    margin-top: 80px;
+    margin-bottom: 1000px;
+    gap: 100px;
+  }
+
+  section.whitepapers div.companies {
+    width: 90%;
+    row-gap: 60px;
+    column-gap: 30%;
+    padding: 0 10%;
+    justify-content: space-evenly;
+  }
+
+  .whitepapers p.paper {
+    color: #172049;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: rgb(23, 32, 73);
+  }
+
+  section.whitepapers div.companies p {
+    min-width: 80px;
+    width: 12%;
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  section.whitepapers {
+    gap: 130px;
+    justify-content: center;
+  }
+
+  section.whitepapers div.companies {
+    width: 90%;
+    row-gap: 50px;
+    column-gap: 30%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .whitepapers p.paper {
+    color: #172049;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: rgb(23, 32, 73);
+  }
+
+  section.whitepapers div.companies p {
+    min-width: 80px;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  section.whitepapers div.companies p img {
+    width: 100%;
+    height: auto;
+  }
 }
