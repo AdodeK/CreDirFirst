@@ -51,11 +51,11 @@ main header figure img {
   color: #172049;
   font-family: Arial, Helvetica, sans-serif;
   font-size: var(--fontsizeh2);
-  color: rgb(23, 32, 73);
+  color: var(--alignselfTextColor);
 }
 
 section.whitepapers {
-  margin-top: 100px;
+  margin-top: 90px;
   margin-bottom: 500px;
   display: flex;
   flex-flow: column nowrap;
@@ -72,12 +72,12 @@ section.whitepapers div.companies {
   align-items: center;
   justify-content: center;
   row-gap: 70px;
-  column-gap: 12%;
+  column-gap: 14%;
 }
 
 section.whitepapers div.companies p {
   min-width: 80px;
-  width: 12%;
+  width: 10%;
   max-width: 150px;
 }
 
@@ -149,6 +149,9 @@ footer .bttop .fa-right-long {
   border-radius: 1rem;
 }
 
+@media screen and (max-width: 1025px) {
+}
+
 @media screen and (max-width: 768px) {
   main header {
     padding: 2rem 2.5rem;
@@ -164,7 +167,7 @@ footer .bttop .fa-right-long {
   .whitepapers p.paper {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.9rem;
-    color: rgb(23, 32, 73);
+    color: var(--alignselfTextColor);
   }
 
   section.whitepapers {
@@ -247,7 +250,7 @@ footer .bttop .fa-right-long {
     color: #172049;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.75rem;
-    color: rgb(23, 32, 73);
+    color: var(--alignselfTextColor);
   }
 
   section.whitepapers div.companies p {
@@ -276,7 +279,7 @@ footer .bttop .fa-right-long {
     color: #172049;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.7rem;
-    color: rgb(23, 32, 73);
+    color: var(--alignselfTextColor);
   }
 
   section.whitepapers div.companies p {
@@ -305,7 +308,7 @@ footer .bttop .fa-right-long {
     color: #172049;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
-    color: rgb(23, 32, 73);
+    color: var(--alignselfTextColor);
   }
 
   section.whitepapers div.companies p {
@@ -333,7 +336,7 @@ footer .bttop .fa-right-long {
     color: #172049;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4rem;
-    color: rgb(23, 32, 73);
+    color: var(--alignselfTextColor);
   }
 
   section.whitepapers div.companies p {
