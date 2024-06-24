@@ -5,9 +5,9 @@
 }
 
 :root {
-  --fontsizeh2: 1.4rem;
+  --fontsizeh2: 1.5rem;
   --fontsizep: 1rem;
-  --fontsizelinks: 0.9rem;
+  --fontsizelinks: 0.95rem;
   --linkslextcolor: rgb(119, 149, 208);
   --linkcolors: rgb(55, 93, 168);
   --alignselfTextColor: #1f5277;
@@ -32,18 +32,14 @@ header div {
   display: none;
 }
 
-div.center {
-  background-color: #182048;
-}
-
 main.container {
-  margin-top: 4vh;
+  margin-top: 12.5%;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  gap: 4vh;
+  gap: 5vh;
   padding: 2vh 4vw;
 }
 
@@ -58,7 +54,7 @@ main.container {
   font-size: var(--fontsizeh2);
   line-height: 1.5rem;
   font-weight: 400;
-  margin-bottom: 2.5vh;
+  margin-bottom: 3vh;
   text-align: center;
 }
 .update ul {
@@ -75,9 +71,6 @@ main.container {
 .update ul li {
   line-height: 0;
 }
-.update ul li span {
-  margin-right: 1vw;
-}
 
 .update ul li:nth-child(3):hover {
   color: #6ab343;
@@ -85,6 +78,7 @@ main.container {
 
 .update ul a {
   display: inline-block;
+  font-size: var(--fontsizelinks);
   text-decoration: none;
   color: var(--alignselfTextColor);
   font-weight: 400;
@@ -98,7 +92,7 @@ main.container {
 }
 
 main.container .middle {
-  width: 13rem;
+  width: 10rem;
 }
 
 main.container .middle img {
@@ -107,17 +101,6 @@ main.container .middle img {
   display: block;
 }
 
-p.unique {
-  display: none;
-  padding: 0 25%;
-  order: 4;
-  -ms-flex-order: 4;
-  line-height: 1.5rem;
-  font-size: var(--fontsizep);
-  color: #2a345e;
-  text-align: center;
-  font-family: var(--fontFamLucida);
-}
 .plinks {
   margin-bottom: 1.5vh;
   order: 6;
@@ -138,27 +121,23 @@ p.unique {
   -ms-flex-order: 7;
 }
 
-.social .fa-twitter {
-  font-size: 1.2rem;
-  color: #454d6d;
-  margin-right: 0.5vw;
-}
-.social .fa-twitter:hover,
 .social .fa-linkedin-in:hover {
   display: inline-block;
   transform: scaleX(1.1);
   transition-duration: 0.5ms;
 }
 .social .fa-linkedin-in {
-  font-size: 1.2rem;
-  color: #454d6d;
-  margin-left: 0.5vw;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0.6rem;
+  background-color: rgb(0, 119, 175);
+  border-radius: 4px;
 }
 
 footer {
-  margin-top: 20vh;
+  margin-top: 25vh;
   padding: 6vh 0;
-  padding-bottom: 2vh;
+  padding-bottom: 1vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -168,7 +147,7 @@ footer {
   font-family: var(--fontFamLucida);
 }
 footer p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 footer p a {
@@ -191,10 +170,10 @@ footer .bttop {
 footer .bttop .fa-right-long {
   transform: rotate(-90deg);
   color: white;
-  padding: 1rem;
+  padding: 0.7rem;
   border: 1px solid var(--alignselfTextColor);
   background-color: var(--alignselfTextColor);
-  border-radius: 1rem;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -205,18 +184,19 @@ footer .bttop .fa-right-long {
     margin-bottom: 2vh;
     text-align: center;
   }
+  s main.container .middle {
+    width: 8.5rem;
+  }
 
-  /* p.unique {
-    font-size: 0.9rem;
-    padding: 0 23%;
-  } */
-
-  main.container .middle {
-    width: 11rem;
+  footer {
+    margin-top: 30vh;
   }
 }
 
 @media screen and (max-width: 858px) {
+  main.container {
+    margin-top: 14%;
+  }
   .update p {
     font-size: 1.3rem;
     line-height: 1.5rem;
@@ -225,22 +205,12 @@ footer .bttop .fa-right-long {
     text-align: center;
   }
   .container.update ul li {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 0.2vh;
   }
-  .update ul li span {
-    margin-right: 1rem;
-    font-size: 1rem;
-  }
 
-  /* p.unique {
-    padding: 0 13%;
-    font-size: 0.9rem;
-    color: #2a345e;
-    text-align: center;
-  } */
   main.container .middle {
-    width: 9rem;
+    width: 7rem;
   }
 
   .plinks {
@@ -249,27 +219,23 @@ footer .bttop .fa-right-long {
   .container .plinks a {
     text-decoration: none;
     color: var(--linkslextcolor);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: var(--fontFamLucida);
     border-bottom: 1.5px solid var(--linkcolors);
   }
+
   .container .plinks a:hover {
     filter: brightness(120%);
   }
 
-  .social .fa-twitter {
-    font-size: 1.1rem;
-    margin-right: 0.3rem;
-  }
-
   .social .fa-linkedin-in {
     font-size: 1.1rem;
-    margin-left: 0.3rem;
+    margin-left: 0;
   }
 
   footer {
     padding: 6vh 0;
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -280,12 +246,12 @@ footer .bttop .fa-right-long {
   }
 
   footer p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   footer p a {
     text-decoration: none;
     color: var(--linkslextcolor);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-family: var(--fontFamLucida);
     border-bottom: 1.5px solid var(--linkcolors);
   }
@@ -324,67 +290,75 @@ footer .bttop .fa-right-long {
   }
 
   .update p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
     font-weight: 400;
     margin-bottom: 2vh;
     text-align: center;
   }
 
+  .update p {
+    font-size: 1.25rem;
+  }
+
   header div .fa-bars {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   main.container .update ul li {
     line-height: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 426px) {
   body {
-    padding: 0 1.2rem;
+    padding: 1.5rem 2rem;
   }
 
   main.container {
-    padding: 0.7rem;
-    padding-top: 0;
-    gap: 0.5vh;
-  }
-  header {
-    padding: 0.5vh 0.9rem;
-    padding-top: 2vh;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
+    gap: 2vh;
   }
 
-  header div .fa-bars {
-    font-size: 1.3rem;
+  header {
+    padding: 0;
+    padding-top: 0;
   }
+
   .update {
     margin: 1vh 0;
     padding: 0;
     padding-top: 2vh;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
   }
 
+  .update ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0;
+  }
   .update ul li {
     font-size: 0.8rem;
-    margin-bottom: 0.4vh;
-  }
-
-  .update ul li span {
-    margin-right: 1rem;
-    font-size: 1rem;
+    margin-bottom: 0;
+    line-height: 0;
   }
 
   main.container .middle {
+    margin-top: 0;
     width: 100%;
   }
 
   .plinks {
-    margin-bottom: 1.5vh;
+    margin: 1rem 0;
   }
   .container .plinks a {
     text-decoration: none;
     color: var(--linkslextcolor);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-family: var(--fontFamLucida);
     border-bottom: 1.5px solid var(--linkcolors);
   }
@@ -392,20 +366,15 @@ footer .bttop .fa-right-long {
     filter: brightness(120%);
   }
 
-  .social .fa-twitter {
-    font-size: 1.1rem;
-    margin-right: 0.4rem;
-  }
-
   .social .fa-linkedin-in {
     font-size: 1.1rem;
-    margin-left: 0.4rem;
+    margin-left: 0;
   }
 
   footer {
-    margin-top: 15vh;
+    margin-top: 20vh;
     padding: 6vh 0;
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -440,87 +409,28 @@ footer .bttop .fa-right-long {
   footer .bttop .fa-right-long {
     transform: rotate(-90deg);
     color: white;
-    padding: 0.9rem;
+    padding: 0.5rem;
     font-size: 0.8rem;
     border: 1px solid var(--alignselfTextColor);
-    border-radius: 50%;
+    border-radius: 4px;
     background-color: var(--alignselfTextColor);
   }
 }
 @media screen and (max-width: 376px) {
-  body main.container {
-    margin-top: 0;
-    gap: 4vh;
-    padding: 2vh 4vw;
+  .update p {
+    font-size: 1.25rem;
   }
 
-  main.container .update p {
-    font-size: 1.15rem;
+  header div .fa-bars {
+    font-size: 1.4rem;
   }
   .update {
-    margin-top: 0;
-    padding-top: 0;
-  }
-  main.container .middle {
+    margin: 1vh 0;
     margin-bottom: 0;
-  }
-  body {
-    padding: 0 1rem;
-  }
-
-  main.container {
-    padding: 0.7rem;
-  }
-
-  body header {
-    padding: 2vh 0.9rem;
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  body main.container {
-    margin-top: 0;
-    gap: 3vh;
-    padding: 2vh 2vw;
-  }
-  body header {
-    padding: 2vh 2vw;
-    padding-bottom: 0;
-  }
-  .update ul {
-    margin-left: 4vw;
-    font-size: var(--fontsizelinks);
-    font-weight: 400;
-    list-style-type: none;
+    padding: 0;
+    padding-top: 2vh;
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: flex-end;
-    row-gap: 0;
-  }
-  .update ul li {
-    line-height: 0;
-    width: 100%;
-    margin: 0;
-  }
-  main.container .plinks {
-    font-size: 0.75rem;
-  }
-  body main.container .update p {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-  }
-  .update ul li span {
-    margin-right: 5vw;
-  }
-  .update ul li span .fa-circle-check {
-    font-size: 0.9rem;
-  }
-  footer p {
-    font-size: 0.8rem;
-  }
-  footer p a {
-    font-size: 0.7rem;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
   }
 }
