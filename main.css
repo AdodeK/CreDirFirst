@@ -6,8 +6,8 @@
 
 :root {
   --fontsizeh2: 1.4rem;
-  --fontsizep: 1rem;
-  --fontsizelinks: 0.95rem;
+  --fontsizep: 0.95rem;
+  --fontsizelinks: 0.9rem;
   --linkslextcolor: rgb(119, 149, 208);
   --linkcolors: rgb(55, 93, 168);
   --alignselfTextColor: #1f5277;
@@ -165,7 +165,7 @@ footer {
   font-family: var(--fontFamLucida);
 }
 footer p {
-  font-size: 1rem;
+  font-size: var(--fontsizep);
 }
 
 footer p a {
