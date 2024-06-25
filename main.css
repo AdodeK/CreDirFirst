@@ -5,7 +5,7 @@
 }
 
 :root {
-  --fontsizeh2: 1.5rem;
+  --fontsizeh2: 1.4rem;
   --fontsizep: 1rem;
   --fontsizelinks: 0.95rem;
   --linkslextcolor: rgb(119, 149, 208);
@@ -105,6 +105,7 @@ main.container {
   color: #6ab343;
   transform: scale(1.05);
   transition-duration: 0.1ms;
+  filter: brightness(120%);
 }
 
 main.container .middle {
