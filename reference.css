@@ -48,6 +48,20 @@ section p {
 }
 
 @media screen and (max-width: 1024px) {
+  section ol li,
+  section ol li {
+    font-size: 0.85rem;
+    line-height: 1rem;
+  }
+
+  section h4 {
+    font-size: 1rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
   section {
     width: 96%;
   }
