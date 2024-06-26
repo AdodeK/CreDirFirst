@@ -31,18 +31,18 @@ body {
 }
 
 main {
-  width: 94%;
+  width: 95%;
   margin: 0 auto;
 }
 
 main header {
-  padding: 1.8rem 0;
+  padding: 1.5rem 0;
+  padding-bottom: 0;
 }
 
 main header figure {
-  width: 7%;
   min-width: 3rem;
-  max-width: 6rem;
+  max-width: 5rem;
 }
 
 main header figure img {
@@ -59,13 +59,12 @@ main header figure img {
 }
 
 section.whitepapers {
-  margin-top: 20px;
   margin-bottom: 400px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
 }
 
 section.whitepapers div.companies {
@@ -73,16 +72,15 @@ section.whitepapers div.companies {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  row-gap: 50px;
-  column-gap: 17%;
+  row-gap: 40px;
+  column-gap: 10%;
 }
 
 section.whitepapers div.companies p {
-  min-width: 150px;
-  width: 45%;
-  max-width: 250px;
-  box-shadow: 4px 4px 40px 10px rgba(167, 166, 166, 0.1),
-    -4px -4px 40px 10px rgba(167, 166, 166, 0.1);
+  min-width: 200px;
+  max-width: 400px;
+  box-shadow: 4px 4px 40px 5px rgba(167, 166, 166, 0.15),
+    -4px -4px 40px 5px rgba(167, 166, 166, 0.15);
 }
 
 section.whitepapers div.companies p:hover {
@@ -91,11 +89,14 @@ section.whitepapers div.companies p:hover {
   box-shadow: none;
 }
 
+.whitepapers .companies p a {
+  display: block;
+}
+
 .whitepapers .companies p a img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
 }
 
 footer {
@@ -154,17 +155,28 @@ footer .bttop .fa-right-long {
 }
 
 @media screen and (max-width: 1024px) {
+  main header figure {
+    min-width: 3rem;
+    max-width: 4.2rem;
+  }
+
   .whitepapers p.paper {
     font-size: 2.1rem;
   }
+
+  section.whitepapers {
+    gap: 40px;
+  }
+
   section.whitepapers div.companies {
-    column-gap: 14%;
+    column-gap: 6%;
+    row-gap: 50px;
   }
 
   section.whitepapers div.companies p {
     min-width: 150px;
-    width: 45%;
-    max-width: 240px;
+    width: 47%;
+    max-width: 460px;
   }
 }
 
@@ -174,23 +186,26 @@ footer .bttop .fa-right-long {
   }
 
   main header figure {
-    width: 6%;
     min-width: 3rem;
-    max-width: 6rem;
+    max-width: 4rem;
   }
 
   section.whitepapers {
     gap: 40px;
   }
 
+  section.whitepapers div.companies {
+    column-gap: 6%;
+  }
+
   section.whitepapers div.companies p {
-    min-width: 150px;
-    width: 38%;
-    max-width: 240px;
+    min-width: 120px;
+    flex: 1 1 250px;
+    max-width: 350px;
   }
 
   .whitepapers p.paper {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .social .fa-twitter:hover,
@@ -233,13 +248,13 @@ footer .bttop .fa-right-long {
     width: 92%;
   }
   section.whitepapers div.companies {
-    column-gap: 10%;
+    /* column-gap: 6%; */
   }
 
   section.whitepapers div.companies p {
     min-width: 150px;
-    width: 45%;
-    max-width: 240px;
+    flex: 1 1 300px;
+    max-width: 500px;
   }
 
   .whitepapers p.paper {
@@ -268,7 +283,7 @@ footer .bttop .fa-right-long {
   }
 
   main {
-    width: 90%;
+    width: 88%;
   }
   section.whitepapers {
     margin-top: 10px;
@@ -277,11 +292,12 @@ footer .bttop .fa-right-long {
   }
   section.whitepapers div.companies {
     column-gap: 10%;
+    row-gap: 60px;
   }
 
   section.whitepapers div.companies p {
     min-width: 200px;
-    max-width: 300px;
+    max-width: 480px;
     flex: 1 1 150px;
   }
 
@@ -331,8 +347,8 @@ footer .bttop .fa-right-long {
   }
 
   section.whitepapers div.companies p {
-    min-width: 190px;
-    max-width: 300px;
+    min-width: 150px;
+    max-width: 100%;
     flex: 1 1 150px;
   }
 

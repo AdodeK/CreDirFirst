@@ -48,9 +48,14 @@ section p {
 }
 
 @media screen and (max-width: 1024px) {
+  section {
+    gap: 8px;
+    padding: 20px 5px;
+  }
+
   section ol li,
   section ol li {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     line-height: 1rem;
   }
 
@@ -59,7 +64,7 @@ section p {
   }
 
   section p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1rem;
   }
   section {
