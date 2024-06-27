@@ -355,9 +355,7 @@ footer .bttop .fa-right-long {
   }
   .whitepapers p.paper {
     font-size: 1.6rem;
-    box-shadow: 4px 4px 40px 10px rgba(167, 166, 166, 0.2),
-      -4px -4px 40px 10px rgba(167, 166, 166, 0.2);
-    background-color: rgba(167, 166, 166, 0.22);
+    box-shadow: none;
   }
   .social .fa-linkedin-in {
     font-size: 1rem;
