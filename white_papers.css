@@ -31,18 +31,19 @@ body {
 }
 
 main {
-  width: 95%;
+  width: 97%;
   margin: 0 auto;
 }
 
 main header {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   padding-bottom: 0;
 }
 
 main header figure {
   min-width: 3rem;
-  max-width: 5rem;
+  width: 7%;
+  max-width: 4.5rem;
 }
 
 main header figure img {
@@ -64,7 +65,7 @@ section.whitepapers {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 section.whitepapers div.companies {
@@ -72,13 +73,14 @@ section.whitepapers div.companies {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  row-gap: 40px;
-  column-gap: 10%;
+  row-gap: 35px;
+  column-gap: 6%;
 }
 
 section.whitepapers div.companies p {
   min-width: 200px;
-  max-width: 400px;
+  width: 42%;
+  max-width: 500px;
   box-shadow: 4px 4px 40px 5px rgba(167, 166, 166, 0.15),
     -4px -4px 40px 5px rgba(167, 166, 166, 0.15);
 }
@@ -100,12 +102,12 @@ section.whitepapers div.companies p:hover {
 }
 
 footer {
-  padding-bottom: 1vh;
+  padding-bottom: 6px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  gap: 4vh;
+  gap: 24px;
   color: #172049;
   font-family: var(--fontFamLucida);
 }
@@ -156,8 +158,9 @@ footer .bttop .fa-right-long {
 
 @media screen and (max-width: 1024px) {
   main header figure {
-    min-width: 3rem;
-    max-width: 4.2rem;
+    min-width: 2rem;
+    width: 7%;
+    max-width: 3.8rem;
   }
 
   .whitepapers p.paper {
@@ -165,43 +168,44 @@ footer .bttop .fa-right-long {
   }
 
   section.whitepapers {
-    gap: 40px;
+    gap: 30px;
   }
 
   section.whitepapers div.companies {
-    column-gap: 6%;
-    row-gap: 50px;
+    column-gap: 3%;
+    row-gap: 40px;
   }
 
   section.whitepapers div.companies p {
     min-width: 150px;
-    width: 47%;
-    max-width: 460px;
+    width: 48.5%;
+    max-width: 481px;
   }
 }
 
 @media screen and (max-width: 768px) {
   main header {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
 
   main header figure {
-    min-width: 3rem;
-    max-width: 4rem;
+    min-width: 2.5rem;
+    width: 7.5%;
+    max-width: 3rem;
   }
 
   section.whitepapers {
-    gap: 40px;
+    gap: 35px;
   }
 
   section.whitepapers div.companies {
-    column-gap: 6%;
+    column-gap: 4%;
   }
 
   section.whitepapers div.companies p {
     min-width: 120px;
     flex: 1 1 250px;
-    max-width: 350px;
+    max-width: 500px;
   }
 
   .whitepapers p.paper {
@@ -248,13 +252,15 @@ footer .bttop .fa-right-long {
     width: 92%;
   }
   section.whitepapers div.companies {
-    /* column-gap: 6%; */
+    row-gap: 50px;
   }
 
   section.whitepapers div.companies p {
     min-width: 150px;
     flex: 1 1 300px;
     max-width: 500px;
+    box-shadow: 4px 4px 40px 5px rgba(167, 166, 166, 0.2),
+      -4px -4px 40px 5px rgba(167, 166, 166, 0.2);
   }
 
   .whitepapers p.paper {
@@ -279,26 +285,25 @@ footer .bttop .fa-right-long {
 
 @media screen and (max-width: 482px) {
   main header {
-    padding: 5vw 0;
+    padding: 3.5vw 0;
   }
 
   main {
-    width: 88%;
+    width: 93%;
   }
   section.whitepapers {
     margin-top: 10px;
-    /* width: 100%; */
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   section.whitepapers div.companies {
     column-gap: 10%;
-    row-gap: 60px;
+    row-gap: 50px;
   }
 
   section.whitepapers div.companies p {
     min-width: 200px;
     max-width: 480px;
-    flex: 1 1 150px;
+    flex: 1 1 300px;
   }
 
   .whitepapers p.paper {
@@ -322,6 +327,11 @@ footer .bttop .fa-right-long {
 }
 
 @media screen and (max-width: 376px) {
+  main header figure {
+    min-width: 1.5rem;
+    width: 1.5rem;
+  }
+
   main header {
     padding: 5vw 0;
   }
@@ -338,25 +348,16 @@ footer .bttop .fa-right-long {
   section.whitepapers {
     margin-top: 4px;
     gap: 7vw;
-    margin-bottom: 60px;
   }
 
   section.whitepapers div.companies {
     row-gap: 10vw;
-    column-gap: 5%;
   }
-
-  section.whitepapers div.companies p {
-    min-width: 150px;
-    max-width: 100%;
-    flex: 1 1 150px;
-  }
-
   .whitepapers p.paper {
     font-size: 1.6rem;
-    box-shadow: 4px 4px 40px 10px rgba(167, 166, 166, 0.1),
-      -4px -4px 40px 10px rgba(167, 166, 166, 0.1);
-    background-color: rgba(167, 166, 166, 0.12);
+    box-shadow: 4px 4px 40px 10px rgba(167, 166, 166, 0.2),
+      -4px -4px 40px 10px rgba(167, 166, 166, 0.2);
+    background-color: rgba(167, 166, 166, 0.22);
   }
   .social .fa-linkedin-in {
     font-size: 1rem;
