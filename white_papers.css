@@ -73,32 +73,37 @@ section.whitepapers div.companies {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  row-gap: 35px;
-  column-gap: 6%;
+  row-gap: 30px;
+  column-gap: 4%;
 }
 
-section.whitepapers div.companies p {
+section.whitepapers div.companies figure {
   min-width: 200px;
-  width: 42%;
-  max-width: 500px;
+  border: 1px solid #1f527731;
+  outline: 1px solid rgb(184, 184, 184);
+  outline-offset: 1px;
+  border-radius: 5px;
+  width: 48%;
+  max-width: 600px;
   box-shadow: 4px 4px 40px 5px rgba(167, 166, 166, 0.15),
     -4px -4px 40px 5px rgba(167, 166, 166, 0.15);
 }
 
-section.whitepapers div.companies p:hover {
+section.whitepapers div.companies figure:hover {
   transform: scale(1.01); /*negative values inverts images upside down*/
   transition-duration: 0.1s;
   box-shadow: none;
 }
 
-.whitepapers .companies p a {
+/* .whitepapers .companies figure a {
   display: block;
-}
+} */
 
-.whitepapers .companies p a img {
+.whitepapers .companies figure img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 5px;
 }
 
 footer {
@@ -176,7 +181,7 @@ footer .bttop .fa-right-long {
     row-gap: 40px;
   }
 
-  section.whitepapers div.companies p {
+  section.whitepapers div.companies figure {
     min-width: 150px;
     width: 48.5%;
     max-width: 481px;
@@ -195,14 +200,14 @@ footer .bttop .fa-right-long {
   }
 
   section.whitepapers {
-    gap: 35px;
+    gap: 20px;
   }
 
   section.whitepapers div.companies {
     column-gap: 4%;
   }
 
-  section.whitepapers div.companies p {
+  section.whitepapers div.companies figure {
     min-width: 120px;
     flex: 1 1 250px;
     max-width: 500px;
@@ -249,16 +254,21 @@ footer .bttop .fa-right-long {
 
 @media screen and (max-width: 642px) {
   main {
-    width: 92%;
-  }
-  section.whitepapers div.companies {
-    row-gap: 50px;
+    width: 96%;
   }
 
-  section.whitepapers div.companies p {
+  section.whitepapers {
+    row-gap: 20px;
+  }
+
+  section.whitepapers div.companies {
+    row-gap: 40px;
+  }
+
+  section.whitepapers div.companies figure {
     min-width: 150px;
     flex: 1 1 300px;
-    max-width: 500px;
+    max-width: 700px;
     box-shadow: 4px 4px 40px 5px rgba(167, 166, 166, 0.2),
       -4px -4px 40px 5px rgba(167, 166, 166, 0.2);
   }
@@ -285,11 +295,11 @@ footer .bttop .fa-right-long {
 
 @media screen and (max-width: 482px) {
   main header {
-    padding: 3.5vw 0;
+    padding: 3vw 0;
   }
 
   main {
-    width: 93%;
+    width: 96%;
   }
   section.whitepapers {
     margin-top: 10px;
@@ -297,13 +307,13 @@ footer .bttop .fa-right-long {
   }
   section.whitepapers div.companies {
     column-gap: 10%;
-    row-gap: 50px;
+    row-gap: 40px;
   }
 
-  section.whitepapers div.companies p {
+  section.whitepapers div.companies figure {
     min-width: 200px;
-    max-width: 480px;
     flex: 1 1 300px;
+    max-width: 500px;
   }
 
   .whitepapers p.paper {
@@ -333,25 +343,25 @@ footer .bttop .fa-right-long {
   }
 
   main header {
-    padding: 5vw 0;
+    padding: 3vw 0;
   }
 
   main header figure {
     width: 8%;
-    min-width: 2.5rem;
-    max-width: 6rem;
+    min-width: 2rem;
+    max-width: 3rem;
   }
 
   main {
-    width: 90%;
+    width: 94%;
   }
   section.whitepapers {
     margin-top: 4px;
-    gap: 7vw;
+    gap: 5vw;
   }
 
   section.whitepapers div.companies {
-    row-gap: 10vw;
+    row-gap: 7vw;
   }
   .whitepapers p.paper {
     font-size: 1.2rem;
