@@ -79,9 +79,9 @@ section.whitepapers div.companies {
 
 section.whitepapers div.companies figure {
   min-width: 200px;
-  border: 1px solid #1f527731;
-  outline: 1px solid rgb(184, 184, 184);
-  outline-offset: 1px;
+  border: 0.8px solid rgb(184, 184, 184);
+  outline: 0.8px solid rgba(31, 82, 119, 0.592);
+  outline-offset: -2px;
   border-radius: 5px;
   width: 48%;
   max-width: 600px;
