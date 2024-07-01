@@ -46,7 +46,7 @@ main.container {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 35px;
   padding: 12px 4vw;
 }
 
@@ -61,7 +61,7 @@ main.container {
   font-size: var(--fontsizeh2);
   line-height: 1.5rem;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-align: center;
   word-spacing: -0.1rem;
   letter-spacing: -0.03rem;
@@ -75,7 +75,7 @@ main.container {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  column-gap: 7%;
+  column-gap: 6%;
 }
 
 .update ul li:nth-child(3):hover {
@@ -123,7 +123,7 @@ main.container .middle img {
 .container .plinks a {
   text-decoration: none;
   color: #6ab343;
-  font-size: 1.4rem;
+  font-size: var(--fontsizelinks);
   font-family: var(--fontFamLucida);
   border-bottom: 1.5px solid #6ab343;
 }
@@ -199,10 +199,6 @@ footer .bttop .fa-right-long {
     text-align: center;
   }
 
-  .container .plinks a {
-    font-size: 1.4rem;
-  }
-
   main.container .middle {
     width: 10rem;
     margin-bottom: -33px;
@@ -227,7 +223,7 @@ footer .bttop .fa-right-long {
 
   .container.update ul li {
     font-size: 0.85rem;
-    margin-bottom: 0.2vh;
+    margin-bottom: 1.2px;
   }
 
   main.container .middle {
@@ -240,7 +236,7 @@ footer .bttop .fa-right-long {
   .container .plinks a {
     text-decoration: none;
     color: #6ab343;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-family: var(--fontFamLucida);
   }
 
@@ -310,12 +306,8 @@ footer .bttop .fa-right-long {
   .update p {
     line-height: 1.4rem;
     font-weight: 400;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
     text-align: center;
-    font-size: 1.25rem;
-  }
-
-  .container .plinks a {
     font-size: 1.25rem;
   }
 
@@ -333,7 +325,7 @@ footer .bttop .fa-right-long {
 
 @media screen and (max-width: 426px) {
   body {
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
   }
 
   header div .fa-bars {
@@ -390,6 +382,7 @@ footer .bttop .fa-right-long {
     margin: 20px 0;
   }
   .container .plinks a {
+    font-size: 0.8rem;
     text-decoration: none;
     color: var(--linkslextcolor);
     font-family: var(--fontFamLucida);
@@ -425,7 +418,7 @@ footer .bttop .fa-right-long {
   footer p a {
     text-decoration: none;
     color: var(--linkslextcolor);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-family: var(--fontFamLucida);
     border-bottom: 1.5px solid var(--linkcolors);
   }
@@ -465,10 +458,6 @@ footer .bttop .fa-right-long {
     /* margin-top: 1vh; */
   }
 
-  .container .plinks a {
-    font-size: 1.18rem;
-  }
-
   .update p {
     font-size: 1.18rem;
   }
@@ -476,7 +465,7 @@ footer .bttop .fa-right-long {
     font-size: 1.2rem;
   }
   .update {
-    margin: 1vh 0;
+    margin: 5px 0;
     margin-bottom: 0;
     padding: 0;
     padding-top: 10px;
@@ -486,7 +475,7 @@ footer .bttop .fa-right-long {
   }
 
   .update ul {
-    gap: 12px;
+    gap: 11px;
   }
 
   main.container .plinks {
@@ -500,7 +489,12 @@ footer .bttop .fa-right-long {
     margin-top: 0;
     margin-bottom: 20px;
   }
+  body {
+    padding-bottom: 0;
+  }
   footer {
-    margin-top: 100px;
+    margin-top: 200px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
