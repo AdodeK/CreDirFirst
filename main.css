@@ -29,6 +29,10 @@ html::-webkit-scrollbar {
 body {
   font-family: serif;
   word-wrap: break-word;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 header {
   padding: 6px 3vw; /*Header*/
