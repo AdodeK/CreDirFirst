@@ -44,7 +44,7 @@ header div {
 }
 
 main.container {
-  margin-top: 12.5%;
+  margin-top: 10%;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -80,6 +80,7 @@ main.container {
   align-items: center;
   justify-content: center;
   column-gap: 6%;
+  row-gap: 10px;
 }
 
 .update ul li:nth-child(3):hover {
@@ -103,7 +104,7 @@ main.container {
 }
 .update a:hover {
   color: #6ab343;
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition-duration: 0.1ms;
   filter: brightness(120%);
 }
@@ -214,6 +215,9 @@ footer .bttop .fa-right-long {
 }
 
 @media screen and (max-width: 858px) {
+  body {
+    min-height: 110vh;
+  }
   main.container {
     margin-top: 14%;
   }
@@ -296,11 +300,11 @@ footer .bttop .fa-right-long {
 
 @media screen and (max-width: 768px) {
   body {
-    padding: 0 1rem;
+    padding: 0 8px;
   }
 
   header {
-    padding: 24px 1.5rem;
+    padding: 16px;
   }
 
   header div {
@@ -343,40 +347,33 @@ footer .bttop .fa-right-long {
 
 @media screen and (max-width: 426px) {
   body {
-    padding: 1rem 1.5rem;
+    padding: 1rem 0;
+    background-color: aliceblue;
+  }
+
+  header {
+    width: 88%;
+    margin: 0 auto;
+    padding: 0;
   }
 
   header div .fa-bars {
     font-size: 1.4rem;
   }
 
-  .update ul li:first-child {
-    border-bottom: 1.5px solid;
-  }
-  .update ul li:first-child + li {
-    border-bottom: 1.5px solid;
-  }
-
   main.container {
-    margin: 0;
+    width: 88%;
+    margin: 0 auto;
     margin-top: 5%;
-    padding: 0;
+    padding-bottom: 8px;
     gap: 7px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid silver;
   }
-
-  main.container .middle {
-    width: 100%;
-    margin-bottom: -10px;
-  }
-
-  header {
-    padding: 0;
-    padding-top: 0;
-  }
-
   .update {
-    margin: 6px 0;
     padding: 0;
+    margin: 6px 0;
     padding-top: 8px;
     display: flex;
     flex-flow: column nowrap;
@@ -395,7 +392,15 @@ footer .bttop .fa-right-long {
   main.container .middle {
     margin-top: 0;
     width: 100%;
+    margin-bottom: -10px;
   }
+
+  main.container figure.middle img {
+    border-radius: 8px;
+    outline: 2px solid aliceblue;
+    outline-offset: -1px;
+  }
+
   .plinks {
     margin: 20px 0;
   }
@@ -425,7 +430,8 @@ footer .bttop .fa-right-long {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    color: #172049;
+    color: #eee;
+    background-color: #1f5277;
     font-family: var(--fontFamLucida);
   }
 
@@ -435,10 +441,10 @@ footer .bttop .fa-right-long {
   }
   footer p a {
     text-decoration: none;
-    color: var(--linkslextcolor);
+    color: #ccc;
     font-size: 0.8rem;
     font-family: var(--fontFamLucida);
-    border-bottom: 1.5px solid var(--linkcolors);
+    border-bottom: 1.5px solid #ccc;
   }
 
   footer p a:hover {
@@ -458,58 +464,27 @@ footer .bttop .fa-right-long {
     font-size: 0.8rem;
     border: 1px solid var(--alignselfTextColor);
     border-radius: 4px;
-    background-color: var(--alignselfTextColor);
+    background-color: #29648e;
   }
 }
+
 @media screen and (max-width: 376px) {
   body {
-    padding: 1rem 1.5rem;
+    padding-bottom: 0;
   }
-
-  main.container .middle {
-    margin-top: 5px;
-    margin-bottom: -10px;
-  }
-
-  header {
-    margin: 7px 0;
-    /* margin-top: 1vh; */
-  }
-
   .update p {
     font-size: 1.18rem;
   }
   header div .fa-bars {
     font-size: 1.2rem;
   }
-  .update {
-    margin: 5px 0;
-    margin-bottom: 0;
-    padding: 0;
-    padding-top: 10px;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 16px;
-  }
-
-  .update ul {
-    gap: 11px;
-  }
-
   main.container .plinks {
     margin-bottom: 30px;
   }
   footer p a {
     line-height: 14px;
   }
-  main.container {
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-  body {
-    padding-bottom: 0;
-  }
+
   footer {
     margin-top: 36vh;
     margin-bottom: 0;
