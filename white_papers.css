@@ -28,6 +28,10 @@ html::-webkit-scrollbar {
 body {
   font-family: serif;
   word-wrap: break-word;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  min-height: 120vh;
 }
 
 main {
@@ -108,6 +112,7 @@ section.whitepapers div.companies figure:hover {
 
 footer {
   padding-bottom: 6px;
+  padding-bottom: 2px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -209,8 +214,8 @@ footer .bttop .fa-right-long {
 
   section.whitepapers div.companies figure {
     min-width: 120px;
-    flex: 1 1 250px;
-    max-width: 500px;
+    flex: 1 1 400px;
+    max-width: 700px;
   }
 
   .whitepapers p.paper {
@@ -245,7 +250,7 @@ footer .bttop .fa-right-long {
 
   footer .bttop .fa-right-long {
     transform: rotate(-90deg);
-    padding: 6px;
+    padding: 8px;
     border: 1px solid var(--alignselfTextColor);
     background-color: var(--alignselfTextColor);
     border-radius: 4px;
@@ -290,6 +295,10 @@ footer .bttop .fa-right-long {
     font-size: 0.75rem;
     font-family: var(--fontFamLucida);
     border-bottom: 1.5px solid var(--linkcolors);
+  }
+
+  footer .bttop .fa-right-long {
+    padding: 6px;
   }
 }
 
